@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-// 查询套餐管理列表
+// 查询套餐列表
 export function listSetmeal(query) {
   return request({
     url: '/reservation/setmeal/list',
@@ -9,7 +9,7 @@ export function listSetmeal(query) {
   })
 }
 
-// 查询套餐管理详细
+// 查询套餐详细
 export function getSetmeal(id) {
   return request({
     url: '/reservation/setmeal/' + id,
@@ -17,7 +17,7 @@ export function getSetmeal(id) {
   })
 }
 
-// 新增套餐管理
+// 新增套餐
 export function addSetmeal(data) {
   return request({
     url: '/reservation/setmeal',
@@ -26,7 +26,7 @@ export function addSetmeal(data) {
   })
 }
 
-// 修改套餐管理
+// 修改套餐
 export function updateSetmeal(data) {
   return request({
     url: '/reservation/setmeal',
@@ -35,7 +35,7 @@ export function updateSetmeal(data) {
   })
 }
 
-// 删除套餐管理
+// 删除套餐
 export function delSetmeal(id) {
   return request({
     url: '/reservation/setmeal/' + id,
